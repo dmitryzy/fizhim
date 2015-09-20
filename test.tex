@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{report} 
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\ifx\pdfoutput\undefined
+\usepackage{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+\fi
+\graphicspath{{images/}{lab/img_lab_3/}}
+\usepackage{longtable}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%
+\newtheorem{Task}{Задача}
+\newtheorem{Example}{Пример}
+%Параметры титульного листа
+\author{Цымай Д.В.\\ \texttt{dmitryzy@gmail.com}}
+\title{Практические занятия \\ по курсу "Физическая и коллоидная химия"}
+\date{}
+%
+\begin{document}
+\input{lab/lab13}
+\end{document}

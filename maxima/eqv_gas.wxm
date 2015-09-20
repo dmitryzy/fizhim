@@ -1,0 +1,33 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 15.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+P(T,V):=R*T/V;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq0:P2(T,V):=R*T/(V-b)-a/V^2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq1:diff(P2(T,V),V,1)=0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq2:diff(P2(T,V),V,2)=0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+K:lhs(solve([eq1,eq2],[T,V]));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+K;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+5/9,numer;
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$
